@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@theme {
+  --container-center: true;
+
+  /* البادينج الافتراضي (أقل من sm) */
+  --container-padding-default: 1rem;
+
+  /* من sm فصاعداً */
+  --container-padding-sm: 2rem;
+
+  /* من lg فصاعداً */
+  --container-padding-lg: 4rem;
+
+  /* من xl فصاعداً */
+  --container-padding-xl: 5rem;
+
+  /* من 2xl فصاعداً */
+  --container-padding-2xl: 6rem;
+}
