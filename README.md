@@ -1,54 +1,45 @@
-# React + TypeScript + Vite
+# Products Builder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and interactive React + TypeScript project to manage and display products dynamically.
 
-Currently, two official plugins are available:
+## Demo
+[Live Demo](https://products-builder-three.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Features
+-Add, edit, and delete products dynamically.
+-Assign multiple colors and categories to products.
+-Form validation for product fields using productValidation.
+-Responsive design using TailwindCSS.
+-Interactive modals for add/edit/delete actions.
+-Toast notifications for actions.
 
-## Expanding the ESLint configuration
+# Technologies Used
+React 18
+TypeScript
+TailwindCSS
+Vite
+react-hot-toast for notifications
+uuid for unique product IDs
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+# Installation
+1-Clone the repository:
+`git clone https://github.com/Rawan-Amr111/products_builder.git`
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+2-Install dependencies:
+```
+cd products_builder
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+3-Run the project locally:
+`npm run dev`
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+# Usage
+-Click Add New Product to add a product.
+-Use the edit button on any product card to modify it.
+-Delete a product with the delete button on the product card.
+-Select colors and categories as needed.
+
+
+
