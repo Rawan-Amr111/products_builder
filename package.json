@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Rawan-Amr111.github.io/products_builder",
+  "homepage": "https://Rawan-Amr111.github.io/products_builder/",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
