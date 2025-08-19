@@ -231,6 +231,7 @@ function App() {
     setProduct(defaultProductObj);
     close();
   };
+  console.log("productList:", productList);
 
   return (
     <main className="container mx-auto">
